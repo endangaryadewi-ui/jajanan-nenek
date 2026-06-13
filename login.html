@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+
+<html class="light" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
+<title>Masuk - Jajanan Nenek</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&amp;family=Plus+Jakarta+Sans:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-dim": "#ddd9d6",
+                        "surface-container": "#f1ede9",
+                        "on-tertiary-container": "#fffbff",
+                        "on-primary-fixed": "#3c0800",
+                        "on-primary-container": "#fffbff",
+                        "primary": "#9a4029",
+                        "surface-variant": "#e5e2de",
+                        "inverse-on-surface": "#f4f0ec",
+                        "surface": "#fdf9f5",
+                        "on-secondary-fixed-variant": "#215025",
+                        "on-tertiary-fixed-variant": "#663d0b",
+                        "on-tertiary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "surface-container-low": "#f7f3ef",
+                        "background": "#fdf9f5",
+                        "primary-fixed": "#ffdbd2",
+                        "tertiary-container": "#9b6a35",
+                        "on-surface": "#1c1c19",
+                        "surface-container-high": "#ebe7e4",
+                        "on-background": "#1c1c19",
+                        "outline-variant": "#dcc1ba",
+                        "outline": "#89726c",
+                        "tertiary": "#7f521f",
+                        "inverse-primary": "#ffb4a1",
+                        "inverse-surface": "#31302e",
+                        "primary-fixed-dim": "#ffb4a1",
+                        "tertiary-fixed": "#ffdcbd",
+                        "on-primary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-fixed": "#002105",
+                        "tertiary-fixed-dim": "#f7bb7e",
+                        "secondary-fixed-dim": "#9fd49b",
+                        "on-surface-variant": "#56423d",
+                        "on-tertiary-fixed": "#2c1600",
+                        "primary-container": "#b9583e",
+                        "on-secondary-container": "#3e6d3e",
+                        "surface-container-highest": "#e5e2de",
+                        "surface-bright": "#fdf9f5",
+                        "secondary-fixed": "#baf0b6",
+                        "on-secondary": "#ffffff",
+                        "secondary-container": "#b8edb3",
+                        "on-error": "#ffffff",
+                        "secondary": "#39693b",
+                        "on-primary-fixed-variant": "#7e2c16",
+                        "surface-tint": "#9d422b",
+                        "error": "#ba1a1a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "20px",
+                        "container-max": "1200px",
+                        "margin-desktop": "64px",
+                        "base": "8px",
+                        "gutter": "16px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Plus Jakarta Sans"],
+                        "label-md": ["Plus Jakarta Sans"],
+                        "headline-md": ["Playfair Display"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "headline-lg": ["Playfair Display"],
+                        "headline-lg-mobile": ["Playfair Display"],
+                        "headline-xl": ["Playfair Display"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "700" }],
+                        "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+                    }
+                },
+            },
+        }
+    </script>
+<style>.material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24
+    }
+.paper-texture {
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuBwvJuNcXY6HMQ51FrvixQUKIXTXDo-mmuD1Deyr8KUkXTmXB_z6GpspHzIkxHV5duU0g0e9xlS93gnVUbUH5bF2JUAF0yR-VFtGx5pSJKUOkE5HNhQF_n3HvvwbbRuQLFHipgffgO61aYGSjVrPyFPqP8jh5L3mzx96ZkhkwrHoUpBUesNUms4xOD5IKS4Y12QLofi_5KNcXGHqmNxpUh_I2GN33dZBS00Cwd2G_i3DdBIMnUfiU4n-ekDFEEl9Ua8sv2u4ZYqLtlc);
+    background-color: #fdf9f5
+    }
+.snack-watermark {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.04;
+    pointer-events: none;
+    z-index: 0;
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuDwMsE8ILeC7A_TzqywUboMrp3-NCNEFjBBY3a7v08dRt11XGDnBj_eXORfcDrO22P_WiYnDA9zxrXy2HcjnG8lExibzeRFGgr9zUa3uSpQtEPNZUzaC4-q02-yiJQt-WSslaU7_QOjvU9pp7HuwN4p8TVHn7I8RzFhnWMqHmRmZl9rWXcXNidJkbuGvyV4WqO2pdZ4kj32RUHXQDrMq0z5PXSg0TKIUYxy37n2VHu6lgaJfgbs2VuX1PDWJveCBYLyAyAbPhc0JfK7);
+    mask-image: radial-gradient(circle at center, black, transparent)
+    }
+.hero-pattern {
+    background: radial-gradient(circle at 10% 20%, rgba(154, 64, 41, 0.05) 0%, transparent 20%), radial-gradient(circle at 90% 80%, rgba(57, 105, 59, 0.05) 0%, transparent 20%)
+    }
+.input-focus-ring:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #39693b
+    }</style>
+</head>
+<body class="paper-texture min-h-screen text-on-surface flex flex-col font-body-md overflow-x-hidden">
+<!-- Snack Watermark Layer -->
+<div class="snack-watermark"></div>
+<div class="hero-pattern fixed inset-0 z-0"></div>
+<!-- Main Content Container -->
+<main class="relative z-10 flex-1 flex flex-col items-center justify-center px-margin-mobile py-12 w-full max-w-[480px] mx-auto">
+<!-- Header Section -->
+<section class="w-full text-center mb-10 flex flex-col items-center">
+<div class="w-24 h-24 mb-6 rounded-xl overflow-hidden shadow-sm">
+<img alt="Jajanan Nenek Logo" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC37bdnJUeqts-DjJAS-LJYLgc7aLse7-t7KjcxIXqehqB26-D6uj1Jy6hI2ozfjgoD2eT7WuO-YoRj4NJsohl9vlb9MPfeApCLaG3ZDAEPfx-y2KeJu1BeaB31IbNbkpvtAMJXqDE5eEud7VT3S0k8h-m60rjDN4i0jIlgI19fp1kSqgobh9ffs0UNVGZbQDIrZsaaFXWK7kF-JRsUP4QZy0LWjuHyxRy8qxwttcWVcnVoeHWipMXaofTYxwJuM2E1JA4M_dUdXiPV"/>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-primary mb-2">Selamat Datang Kembali</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-[280px]">Hangatnya cita rasa tradisional dalam setiap suapan.</p>
+</section>
+<!-- Form Section -->
+<section class="w-full bg-surface-container-lowest/60 backdrop-blur-sm p-8 rounded-[24px] shadow-[0_8px_30px_rgba(192,93,67,0.06)] border border-surface-variant/30">
+<form action="#" class="space-y-6" onsubmit="event.preventDefault();">
+<!-- Username/Email Field -->
+<div class="space-y-2">
+<label class="font-label-md text-label-md text-on-surface-variant block ml-1" for="login-id">Email atau No. Telepon</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline">mail</span>
+<input class="w-full pl-12 pr-4 py-4 bg-surface-container-low border border-outline-variant rounded-xl text-body-md focus:border-secondary focus:ring-1 focus:ring-secondary transition-all outline-none" id="login-id" placeholder="nenek@jajanan.com" type="text"/>
+</div>
+</div>
+<!-- Password Field -->
+<div class="space-y-2">
+<div class="flex justify-between items-center px-1">
+<label class="font-label-md text-label-md text-on-surface-variant" for="password">Kata Sandi</label>
+<a class="font-label-md text-label-md text-primary hover:underline transition-all" href="#">Lupa Password?</a>
+</div>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline">lock</span>
+<input class="w-full pl-12 pr-12 py-4 bg-surface-container-low border border-outline-variant rounded-xl text-body-md focus:border-secondary focus:ring-1 focus:ring-secondary transition-all outline-none" id="password" placeholder="••••••••" type="password"/>
+<button class="absolute right-4 top-1/2 -translate-y-1/2 text-outline hover:text-on-surface-variant transition-colors" type="button">
+<span class="material-symbols-outlined">visibility</span>
+</button>
+</div>
+</div>
+<!-- Login CTA -->
+<a href="index.html" class="bg-red-600 text-white py-3 rounded-lg block text-center font-bold">
+  Masuk Sekarang
+</a>
+</form>
+<!-- Social Login Divider -->
+<div class="relative my-8 text-center">
+<hr class="border-outline-variant/50"/>
+<span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-surface px-4 text-label-md text-outline font-label-md">atau masuk dengan</span>
+</div>
+<!-- Social Buttons -->
+<div class="grid grid-cols-2 gap-4">
+<button class="flex items-center justify-center gap-2 py-3 px-4 border border-outline-variant rounded-xl hover:bg-surface-variant/30 transition-all active:scale-95">
+<img alt="Google" class="w-5 h-5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRFA6mGw1oGAhLkOSSpc_8M569hb15Ug795o57kmlLzG5a0n48K7xuB3JUrj7hEe1vwP5U5affEc0L0UhuLITwRa4ZnJXwFFKi8Nt8jaV2QBYh3rZKmeP25_876lMBkpH16VFT4JlhAvN-fbocKzUCTJjaVKYKjvh0EYnnNmR-S0uy580ov9-QhXzaiM1cCn0S-JwXzUVtF1xkaB_wPKjdB5Vd-MQ1y3DeUkv6ASotaeZlrqfv51Sy0HbxivGVVoHPOal2674M-5WK"/>
+<span class="font-label-md text-label-md text-on-surface-variant">Google</span>
+</button>
+<button class="flex items-center justify-center gap-2 py-3 px-4 border border-outline-variant rounded-xl hover:bg-surface-variant/30 transition-all active:scale-95">
+<img alt="Facebook" class="w-5 h-5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrnaKg8QSXowFD9E6mT19e6LmH_XaryINP0pa2Xv7nHC5aksR4NBvE5PdVnvjwLpSxP3Alz4wcgX0RnoeNCICHK10CIwwshPBmAjIDZ5phkaiUtJKIkm2tcr3YJpGsJNSc9SrA4jxSPwuu15msYyF0WyocoIaDGNwHKY5zrIzpPofNNuS_36iCObjDI10HPMRB1UhJc1vGn4B9m7mf1MLQ4TnwPl0KAB65B-R2x7RoQY9Zedt_fSzyhY59b7gQqzBIx3nVR4-9vnFS"/>
+<span class="font-label-md text-label-md text-on-surface-variant">Facebook</span>
+</button>
+</div>
+</section>
+<!-- Footer Section -->
+<footer class="mt-10 text-center">
+<p class="font-body-md text-body-md text-on-surface-variant">
+                Belum punya akun? 
+                <a class="font-label-md text-label-md text-primary font-semibold hover:underline transition-all" href="#">Daftar di sini</a>
+</p>
+</footer>
+</main>
+<!-- Decorative Bottom Elements -->
+<div class="fixed bottom-0 left-0 w-full h-24 pointer-events-none z-0">
+<div class="absolute bottom-0 right-0 w-48 h-48 opacity-10 blur-3xl bg-secondary rounded-full"></div>
+<div class="absolute bottom-0 left-0 w-32 h-32 opacity-10 blur-3xl bg-primary rounded-full"></div>
+</div>
+<!-- Micro-interaction Script -->
+<script>
+        // Simple password toggle logic
+        const toggleBtn = document.querySelector('button[type="button"]');
+        const passInput = document.getElementById('password');
+        
+        if (toggleBtn && passInput) {
+            toggleBtn.addEventListener('click', () => {
+                const isPass = passInput.type === 'password';
+                passInput.type = isPass ? 'text' : 'password';
+                toggleBtn.querySelector('span').textContent = isPass ? 'visibility_off' : 'visibility';
+            });
+        }
+
+        // Add visual interest to the snack-watermark randomly
+        document.addEventListener('DOMContentLoaded', () => {
+            const watermark = document.querySelector('.snack-watermark');
+            // This just simulates the subtle feeling of a textured background
+            watermark.style.backgroundPosition = `${Math.random() * 100}% ${Math.random() * 100}%`;
+        });
+    </script>
+</body></html>

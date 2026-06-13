@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary-fixed": "#27180a",
+                    "on-error-container": "#93000a",
+                    "on-primary-container": "#efffec",
+                    "surface-variant": "#e3e2df",
+                    "on-background": "#1b1c1a",
+                    "on-primary-fixed": "#07200e",
+                    "on-surface": "#1b1c1a",
+                    "on-surface-variant": "#434842",
+                    "secondary-fixed-dim": "#ddc2aa",
+                    "secondary-fixed": "#faddc5",
+                    "error": "#ba1a1a",
+                    "tertiary-container": "#956b40",
+                    "primary": "#47614a",
+                    "surface": "#faf9f5",
+                    "on-error": "#ffffff",
+                    "surface-container": "#efeeea",
+                    "primary-container": "#5f7a61",
+                    "primary-fixed": "#cceacc",
+                    "surface-container-low": "#f4f4f0",
+                    "on-tertiary": "#ffffff",
+                    "on-tertiary-container": "#fffaf8",
+                    "outline": "#737971",
+                    "tertiary-fixed": "#ffdcbd",
+                    "secondary-container": "#f7dac3",
+                    "primary-fixed-dim": "#b1ceb1",
+                    "tertiary": "#79532a",
+                    "on-tertiary-fixed-variant": "#623f18",
+                    "surface-container-high": "#e9e8e4",
+                    "error-container": "#ffdad6",
+                    "surface-bright": "#faf9f5",
+                    "on-secondary-fixed-variant": "#564332",
+                    "on-secondary": "#ffffff",
+                    "background": "#faf9f5",
+                    "surface-container-highest": "#e3e2df",
+                    "inverse-on-surface": "#f2f1ed",
+                    "surface-tint": "#4a654d",
+                    "secondary": "#6f5a48",
+                    "on-primary-fixed-variant": "#334d36",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary": "#ffffff",
+                    "on-secondary-container": "#745f4c",
+                    "inverse-surface": "#2f312e",
+                    "inverse-primary": "#b1ceb1",
+                    "outline-variant": "#c3c8bf",
+                    "surface-dim": "#dbdad6",
+                    "tertiary-fixed-dim": "#f0bd8b",
+                    "on-tertiary-fixed": "#2c1600"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "base": "8px",
+                    "gutter": "24px",
+                    "section-gap": "80px",
+                    "margin-mobile": "16px",
+                    "stack-sm": "8px",
+                    "stack-lg": "32px",
+                    "container-max": "1200px",
+                    "stack-md": "16px"
+            },
+            "fontFamily": {
+                    "headline-lg-mobile": ["Newsreader"],
+                    "body-sm": ["Plus Jakarta Sans"],
+                    "title-md": ["Plus Jakarta Sans"],
+                    "headline-lg": ["Newsreader"],
+                    "label-caps": ["Plus Jakarta Sans"],
+                    "body-lg": ["Plus Jakarta Sans"],
+                    "display-lg": ["Newsreader"]
+            },
+            "fontSize": {
+                    "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "500"}],
+                    "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                    "title-md": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "500"}],
+                    "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                    "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface min-h-screen flex flex-col font-body-lg">
+<!-- TopAppBar -->
+<header class="bg-surface dark:bg-background sticky top-0 z-40">
+<div class="flex justify-between items-center px-gutter w-full max-w-container-max mx-auto h-16">
+<div class="flex items-center gap-stack-sm">
+<span class="material-symbols-outlined text-primary dark:text-primary-fixed" data-icon="bakery_dining">bakery_dining</span>
+<h1 class="font-headline-lg text-headline-lg text-primary dark:text-primary-fixed">Jajanan Nenek</h1>
+</div>
+<div class="hidden md:flex gap-stack-lg items-center">
+<a class="text-on-surface-variant hover:bg-surface-container-low transition-colors px-3 py-1 rounded-lg" href="index.html">Beranda</a>
+<a class="text-primary font-bold hover:bg-surface-container-low transition-colors px-3 py-1 rounded-lg" href="produk,html">Produk</a>
+<a class="text-on-surface-variant hover:bg-surface-container-low transition-colors px-3 py-1 rounded-lg" href="keranjang.html">Keranjang</a>
+<a class="text-on-surface-variant hover:bg-surface-container-low transition-colors px-3 py-1 rounded-lg" href="tentang.html">Tentang</a>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary dark:text-primary-fixed p-2 rounded-full hover:bg-surface-container-low transition-colors cursor-pointer" data-icon="search">search</span>
+<span class="material-symbols-outlined text-primary dark:text-primary-fixed p-2 rounded-full hover:bg-surface-container-low transition-colors cursor-pointer md:hidden" data-icon="menu">menu</span>
+</div>
+</div>
+</header>
+<main class="flex-grow w-full max-w-container-max mx-auto px-gutter py-stack-lg">
+<!-- Page Header & Filtering -->
+<section class="mb-section-gap">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-stack-md border-b border-outline-variant pb-stack-md">
+<div>
+<span class="font-label-caps text-label-caps text-primary mb-2 block">KOLEKSI KAMI</span>
+<h2 class="font-display-lg text-display-lg text-on-surface">Pilihan Jajanan Pasar</h2>
+</div>
+<!-- Sorting Bar -->
+<div class="flex flex-wrap items-center gap-4 py-2">
+<div class="flex gap-2">
+</div>
+</section>
+<!-- Product Grid: 2-column layout -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Item 1: Kue Serabi -->
+<article class="group bg-surface-container-lowest rounded-xl overflow-hidden border border-outline-variant hover:shadow-sm transition-all duration-300">
+<div class="aspect-[16/9] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A professional food photography shot of traditional Indonesian Kue Serabi pancake, featuring a soft white bubbly texture topped with rich brown palm sugar syrup. The dish is presented on a clean white ceramic plate with a textured banana leaf underneath, set against a warm minimalist kitchen background. The lighting is soft and natural from the side, highlighting the delicate textures of the snack. The aesthetic is clean, premium, and maternal, using a palette of off-white, deep brown, and organic green." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkEwZEL1zUcMARfYAH5s0uuGyxXunQegprH-MNrRr4pPHybiEQ3mhiulJwdEZPvJLNP2OeXo1xiTlRkHljMHHytxgVIPKO_KPR_hvW-iOdcDeyKV1UeVN5dqFBWdThnmy5_5qkwakPvijQRhMQXNwRvs0WNPzlRo0ZjfZltCq6piK4Qf3wR4gFEdWWdaK212H01u4IrIXBpQGULoWxyOfs59uPA8_yKASO9PRfv1TVQEhxoCI2PmLfsohGlVZw7KuStL7iRfGdJLg"/>
+</div>
+<div class="p-gutter flex flex-col h-full justify-between">
+<div>
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-title-md text-title-md text-on-surface">Kue Serabi</h3>
+<span class="font-title-md text-title-md text-primary">Rp 8.000</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-gutter">Pancake tradisional khas Indonesia dengan tekstur lembut dan kuah kinca gula merah yang kental dan legit.</p>
+</div>
+<button class="w-full bg-primary text-on-primary py-3 rounded-lg font-label-caps text-label-caps hover:bg-primary-container transition-colors active:scale-95 duration-100 flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[18px]" data-icon="add_shopping_cart">add_shopping_cart</span>
+                        Tambah ke Pesanan
+                    </button>
+</div>
+</article>
+<!-- Item 2: Lemper Ayam -->
+<article class="group bg-surface-container-lowest rounded-xl overflow-hidden border border-outline-variant hover:shadow-sm transition-all duration-300">
+<div class="aspect-[16/9] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Exquisite close-up of Lemper Ayam, an Indonesian sticky rice roll filled with seasoned shredded chicken, wrapped meticulously in a vibrant green charred banana leaf. The presentation is elegant on a light-colored wooden board with soft, tactile textures in the background. The lighting is bright and airy, creating a refined nostalgia mood. The colors are dominated by the deep green of the leaf and the pristine white of the rice, embodying a premium traditional boutique feel." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYIyV-X_lAiGlJSDYBr0EdKYrED1qmJ-EFD2ERPGbYfmwbmy5F5IB8XY-qzzXXNB0BXFuhYGfKIrCZOBabNyaVOYS2uLVIviWSPanls_t2f7810hyfhh9RYRL2uY53qrgGUQEDjY6pkZKLadgUlopeALg3AnYAS3bhFlQ_TgOUvKjabkvx_VrcdA1jr_74JdtTQXu6ry7avP6tlC0pBZMODgm1TwSQfrl4ly-BwhcG7Um1n2jKRSlbPTeGkov3WNlrpZqOCe_ppw4"/>
+</div>
+<div class="p-gutter flex flex-col h-full justify-between">
+<div>
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-title-md text-title-md text-on-surface">Lemper Ayam</h3>
+<span class="font-title-md text-title-md text-primary">Rp 3.000</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-gutter">Ketan putih kukus berisi suwiran ayam berbumbu spesial, dibungkus daun pisang yang harum.</p>
+</div>
+<button class="w-full bg-primary text-on-primary py-3 rounded-lg font-label-caps text-label-caps hover:bg-primary-container transition-colors active:scale-95 duration-100 flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[18px]" data-icon="add_shopping_cart">add_shopping_cart</span>
+                        Tambah ke Pesanan
+                    </button>
+</div>
+</article>
+<!-- Item 3: Bubur Ayam (Spanning could be handled by simple grid, but we keep 2-col) -->
+<article class="group bg-surface-container-lowest rounded-xl overflow-hidden border border-outline-variant hover:shadow-sm transition-all duration-300">
+<div class="aspect-[16/9] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A warm, inviting bowl of Indonesian Bubur Ayam chicken porridge served in a handcrafted ceramic bowl. The porridge is topped with golden-brown fried shallots, crisp celery, and tender shredded chicken, with a side of savory yellow broth. The scene is illuminated by gentle morning light, creating a comforting grandmother's kitchen atmosphere. The visual style is modern minimalist with tactile influences, using high-quality editorial food photography techniques." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmVKlKaQ8yDqjB2l_6TosZADB--60l9CtafkzSlnOp3pQkvICzmSN0lXoscluiZRGSBWLPL744GirmBI4u-k_pGzB-BPlpOeJDfPjf8X6cHZP5iUDmVO2Cd1uSx4hONI8qNHp392JzgQe0VvTgzZKvP20-oYEP0Igw4v5-bysRdlo6rk4QgFT7GSdYKb7HyeD2Y_JmU63pSbDauk_Xd2ztgIqQMZ3LJtMQQxXUnu1MTXSliwo4wLOsD0BtWlq2rPnYhC9i6zJORsY"/>
+</div>
+<div class="p-gutter flex flex-col h-full justify-between">
+<div>
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-title-md text-title-md text-on-surface">Bubur Ayam</h3>
+<span class="font-title-md text-title-md text-primary">Rp 10.000</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-gutter">Bubur beras lembut dengan topping ayam suwir, cakwe, kacang kedelai, dan kuah kuning gurih.</p>
+</div>
+<button class="w-full bg-primary text-on-primary py-3 rounded-lg font-label-caps text-label-caps hover:bg-primary-container transition-colors active:scale-95 duration-100 flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[18px]" data-icon="add_shopping_cart">add_shopping_cart</span>
+                        Tambah ke Pesanan
+                    </button>
+</div>
+</article>
+<!-- Placeholder Card for Grid Balance -->
+<div class="hidden md:flex flex-col justify-center items-center border-2 border-dashed border-outline-variant rounded-xl p-gutter text-center opacity-60">
+<span class="material-symbols-outlined text-4xl mb-4 text-outline" data-icon="restaurant_menu">restaurant_menu</span>
+<p class="font-title-md text-title-md">Menu Lainnya Segera Hadir</p>
+<p class="font-body-sm text-body-sm">Kami terus mengkurasi jajanan terbaik untuk Anda.</p>
+</div>
+</div>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="fixed bottom-0 w-full z-50 flex justify-around items-center px-margin-mobile py-2 pb-safe md:hidden bg-surface dark:bg-surface-container-lowest border-t border-outline-variant shadow-sm">
+<div class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline p-2 hover:opacity-80">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-label-caps text-label-caps">Beranda</span>
+</div>
+<div class="flex flex-col items-center justify-center bg-secondary-container dark:bg-secondary text-on-secondary-container dark:text-on-secondary rounded-full px-4 py-1 hover:opacity-80 transition-transform active:scale-90">
+<span class="material-symbols-outlined" data-icon="storefront">storefront</span>
+<span class="font-label-caps text-label-caps">Produk</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline p-2 hover:opacity-80">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+<span class="font-label-caps text-label-caps">Keranjang</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline p-2 hover:opacity-80">
+<span class="material-symbols-outlined" data-icon="info">info</span>
+<span class="font-label-caps text-label-caps">Tentang</span>
+</div>
+</nav>
+<!-- Footer -->
+<footer class="bg-surface-container-highest dark:bg-inverse-surface hidden md:flex flex-col items-center py-section-gap px-gutter w-full max-w-container-max mx-auto">
+<div class="flex gap-8 mb-8">
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors underline font-body-sm" href="#">Beranda</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors underline font-body-sm" href="#">Produk</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors underline font-body-sm" href="#">Keranjang</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors underline font-body-sm" href="#">Tentang</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors underline font-body-sm" href="#">Kebijakan Privasi</a>
+</div>
+<div class="mb-4">
+<span class="font-headline-lg text-headline-lg text-primary">Jajanan Nenek</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface dark:text-inverse-on-surface">© 2026 Jajanan Nenek. Rasa Nostalgia dalam Kualitas Premium.</p>
+</footer>
+</div>
+</footer>
+</body></html>

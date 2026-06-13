@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+<html class="light" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .text-label-caps { letter-spacing: 0.05em; font-weight: 700; }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-secondary-fixed": "#27180a",
+                      "on-error-container": "#93000a",
+                      "on-primary-container": "#efffec",
+                      "surface-variant": "#e3e2df",
+                      "on-background": "#1b1c1a",
+                      "on-primary-fixed": "#07200e",
+                      "on-surface": "#1b1c1a",
+                      "on-surface-variant": "#434842",
+                      "secondary-fixed-dim": "#ddc2aa",
+                      "secondary-fixed": "#faddc5",
+                      "error": "#ba1a1a",
+                      "tertiary-container": "#956b40",
+                      "primary": "#47614a",
+                      "surface": "#faf9f5",
+                      "on-error": "#ffffff",
+                      "surface-container": "#efeeea",
+                      "primary-container": "#5f7a61",
+                      "primary-fixed": "#cceacc",
+                      "surface-container-low": "#f4f4f0",
+                      "on-tertiary": "#ffffff",
+                      "on-tertiary-container": "#fffaf8",
+                      "outline": "#737971",
+                      "tertiary-fixed": "#ffdcbd",
+                      "secondary-container": "#f7dac3",
+                      "primary-fixed-dim": "#b1ceb1",
+                      "tertiary": "#79532a",
+                      "on-tertiary-fixed-variant": "#623f18",
+                      "surface-container-high": "#e9e8e4",
+                      "error-container": "#ffdad6",
+                      "surface-bright": "#faf9f5",
+                      "on-secondary-fixed-variant": "#564332",
+                      "on-secondary": "#ffffff",
+                      "background": "#faf9f5",
+                      "surface-container-highest": "#e3e2df",
+                      "inverse-on-surface": "#f2f1ed",
+                      "surface-tint": "#4a654d",
+                      "secondary": "#6f5a48",
+                      "on-primary-fixed-variant": "#334d36",
+                      "surface-container-lowest": "#ffffff",
+                      "on-primary": "#ffffff",
+                      "on-secondary-container": "#745f4c",
+                      "inverse-surface": "#2f312e",
+                      "inverse-primary": "#b1ceb1",
+                      "outline-variant": "#c3c8bf",
+                      "surface-dim": "#dbdad6",
+                      "tertiary-fixed-dim": "#f0bd8b",
+                      "on-tertiary-fixed": "#2c1600"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "base": "8px",
+                      "gutter": "24px",
+                      "section-gap": "80px",
+                      "margin-mobile": "16px",
+                      "stack-sm": "8px",
+                      "stack-lg": "32px",
+                      "container-max": "1200px",
+                      "stack-md": "16px"
+              },
+              "fontFamily": {
+                      "headline-lg-mobile": ["Newsreader"],
+                      "body-sm": ["Plus Jakarta Sans"],
+                      "title-md": ["Plus Jakarta Sans"],
+                      "headline-lg": ["Newsreader"],
+                      "label-caps": ["Plus Jakarta Sans"],
+                      "body-lg": ["Plus Jakarta Sans"],
+                      "display-lg": ["Newsreader"]
+              },
+              "fontSize": {
+                      "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "500"}],
+                      "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                      "title-md": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                      "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "500"}],
+                      "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                      "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                      "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "600"}]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface antialiased">
+<!-- TopAppBar -->
+<header class="bg-surface dark:bg-background sticky top-0 z-50">
+<nav class="flex justify-between items-center px-gutter w-full max-w-container-max mx-auto h-16">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary dark:text-primary-fixed" data-icon="bakery_dining">bakery_dining</span>
+<h1 class="font-headline-lg text-headline-lg text-primary dark:text-primary-fixed">Jajanan Nenek</h1>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-on-surface-variant hover:bg-surface-container-low transition-colors px-3 py-2 rounded-lg font-body-lg" href="index.html">Beranda</a>
+<a class="text-on-surface-variant hover:bg-surface-container-low transition-colors px-3 py-2 rounded-lg font-body-lg" href="produk.html">Produk</a>
+<a class="text-on-surface-variant hover:bg-surface-container-low transition-colors px-3 py-2 rounded-lg font-body-lg" href="keranjang.html">Keranjang</a>
+<a class="text-primary font-bold hover:bg-surface-container-low transition-colors px-3 py-2 rounded-lg font-body-lg" href="tentang.html">Tentang</a>
+<button class="material-symbols-outlined text-primary" data-icon="search">search</button>
+</div>
+<button class="md:hidden material-symbols-outlined text-on-surface-variant" data-icon="search">search</button>
+</nav>
+</header>
+<main class="w-full max-w-container-max mx-auto px-margin-mobile md:px-gutter">
+<!-- Hero Section: Editorial Asymmetric Layout -->
+<section class="py-section-gap grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-7 order-2 md:order-1">
+<p class="font-label-caps text-label-caps text-primary mb-4">SEJAK 2025</p>
+<h2 class="font-display-lg text-display-lg text-on-background mb-stack-md leading-tight">
+                    Rasa Nostalgia dalam <br class="hidden md:block"/>
+<span class="italic text-primary italic">Kualitas Premium</span>
+</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl leading-relaxed mb-stack-lg">
+                    Kami berdiri sejak 2025, menjaga resep warisan keluarga dengan sepenuh hati. Setiap gigitan adalah perjalanan kembali ke dapur nenek, di mana semua dibuat segar setiap hari tanpa menggunakan pengawet buatan.
+                </p>
+<div class="flex flex-wrap gap-4">
+</div>
+</div>
+<div class="md:col-span-5 order-1 md:order-2">
+<div class="relative aspect-[4/5] rounded-xl overflow-hidden shadow-sm border border-outline-variant">
+<img alt="Traditional Snacks" class="w-full h-full object-cover" data-alt="A premium close-up of traditional Indonesian snacks presented on a woven bamboo plate with a soft-focus background of a clean, modern kitchen. The lighting is warm and natural, casting soft shadows that highlight the textures of the food. The overall aesthetic is refined and minimal, using a palette of earthy greens, deep browns, and clean off-whites to evoke a sense of high-end nostalgia and ingredient quality." src="https://lh3.googleusercontent.com/aida-public/AB6AXuASqZt_N5PIqnGUnJM76g_FXWlAYBZeBxoMPZ1DQWaTRAj9ObrvHkuROKmYzZROKhUeldxBRN4X7mXGwiM8rnApCBDVHwq35TZ-NJorikkNz01iUDPJ2MWpOfXcnONIWMhNf7xnagEcVWHeEVNvlNVyjsLeXVluD3MkCur_Tl5xWd7SVZYZgZgS-Nb7WhHut2p6dEqCiDj_-mQbH-yddDuRDPapqnw7fa7cFaItojz8CJ9yj3Eu_koTu5Rw5QRsi8XJUU2mklhUWFk"/>
+</div>
+</div>
+</section>
+<!-- Values Section -->
+<section class="py-section-gap border-t border-outline-variant">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="p-8 bg-surface-container-low rounded-xl border border-outline-variant transition-transform hover:-translate-y-1">
+<span class="material-symbols-outlined text-primary text-4xl mb-4" data-icon="auto_awesome">auto_awesome</span>
+<h3 class="font-title-md text-title-md text-on-surface mb-2">Resep Warisan</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Menjaga keaslian rasa yang diturunkan dari generasi ke generasi dengan teliti.</p>
+</div>
+<div class="p-8 bg-surface-container-low rounded-xl border border-outline-variant transition-transform hover:-translate-y-1">
+<span class="material-symbols-outlined text-primary text-4xl mb-4" data-icon="eco">eco</span>
+<h3 class="font-title-md text-title-md text-on-surface mb-2">Tanpa Pengawet</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Kesehatan Anda prioritas kami. Semua bahan dipilih dari sumber alami berkualitas tinggi.</p>
+</div>
+<div class="p-8 bg-surface-container-low rounded-xl border border-outline-variant transition-transform hover:-translate-y-1">
+<span class="material-symbols-outlined text-primary text-4xl mb-4" data-icon="schedule">schedule</span>
+<h3 class="font-title-md text-title-md text-on-surface mb-2">Dibuat Segar</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Diproduksi setiap pagi untuk memastikan kerenyahan dan rasa yang optimal saat tiba di tangan Anda.</p>
+</div>
+</div>
+</section>
+<!-- Contact & Map Section -->
+<section class="py-section-gap">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-stack-lg items-start">
+<!-- Contact Details -->
+<div class="space-y-stack-lg">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-background mb-stack-md">Kunjungi Toko Kami</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-stack-lg">Kami senang mendengar dari Anda. Silakan hubungi kami atau mampir ke gerai kami di .....</p>
+</div>
+<div class="space-y-6">
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 flex items-center justify-center bg-secondary-container rounded-full shrink-0">
+<span class="material-symbols-outlined text-on-secondary-container" data-icon="location_on">location_on</span>
+</div>
+<div>
+<p class="font-label-caps text-label-caps text-secondary mb-1">ALAMAT</p>
+<p class="font-body-lg text-body-lg text-on-surface">Jl. Contoh No.123, lombok, .....</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 flex items-center justify-center bg-secondary-container rounded-full shrink-0">
+<span class="material-symbols-outlined text-on-secondary-container" data-icon="schedule">schedule</span>
+</div>
+<div>
+<p class="font-label-caps text-label-caps text-secondary mb-1">JAM OPERASIONAL</p>
+<p class="font-body-lg text-body-lg text-on-surface">Senin - Minggu: 06.00 - 18.00 WITA</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 flex items-center justify-center bg-primary-fixed rounded-full shrink-0">
+<span class="material-symbols-outlined text-on-primary-fixed-variant" data-icon="chat">chat</span>
+</div>
+<div>
+<p class="font-label-caps text-label-caps text-primary mb-1">WHATSAPP</p>
+<p class="font-body-lg text-body-lg text-on-surface font-semibold">+62 812-3456-7890</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 flex items-center justify-center bg-secondary-container rounded-full shrink-0">
+<span class="material-symbols-outlined text-on-secondary-container" data-icon="mail">mail</span>
+</div>
+<div>
+<p class="font-label-caps text-label-caps text-secondary mb-1">EMAIL</p>
+<p class="font-body-lg text-body-lg text-on-surface">nenek@jajanan.com</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Map Placeholder -->
+<div class="w-full h-full min-h-[400px] bg-surface-container rounded-xl overflow-hidden border border-outline-variant relative group">
+<div class="absolute inset-0 flex flex-col items-center justify-center bg-surface-variant/50 p-8 text-center">
+<span class="material-symbols-outlined text-6xl text-primary mb-4" data-icon="map">map</span>
+<h4 class="font-title-md text-title-md mb-2">Peta Lokasi</h4>
+<p class="font-body-sm text-body-sm mb-6">Jl. Contoh No.123, lombok , .....</p>
+<button class="bg-white border border-outline text-on-surface px-6 py-2 rounded-lg font-label-caps hover:bg-surface-container transition-colors">LIHAT DI GOOGLE MAPS</button>
+</div>
+<img alt="Map location" class="w-full h-full object-cover opacity-30 grayscale" data-alt="A stylized, minimalist map view of a city grid with a soft beige and green color palette that matches the brand identity. The map features a single, prominent pin marker indicating the location of a local boutique. The visual style is clean, modern, and high-contrast, avoiding cluttered details to maintain a professional and premium appearance. Light mode aesthetic with subtle organic textures." data-location="Denpasar, Bali" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSiwwdPV8gu74YxzR6jc-bRSQlntVLXNcMEvy1jRUOk95kMYS2MM6qkwDEuiSm3DBd4iVPl_Mvlq7GZy94SLVsECqAj8nk5yGuRsR4DB68agQ3fvmGYnSkGBiW5LRBi7FBTPwmQh9EDtf9dayWlpunEkDahnIoJArqmq61VB7zNCtzSYHaec7BoBiueOkRiE72aL2OMQ2DV6gLsWGExgQaW7RjFTauVJTp3MgN97BFWTZtXJv3NzhiltYbb8AWUz3o13PniKqRZMg"/>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer (Desktop) -->
+<footer class="bg-surface-container-highest dark:bg-inverse-surface hidden md:flex flex-col items-center py-section-gap px-gutter w-full max-w-container-max mx-auto">
+<div class="flex gap-8 mb-8">
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors underline font-body-sm" href="#">Beranda</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors underline font-body-sm" href="#">Produk</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors underline font-body-sm" href="#">Keranjang</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors underline font-body-sm" href="#">Tentang</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors underline font-body-sm" href="#">Kebijakan Privasi</a>
+</div>
+<div class="mb-4">
+<span class="font-headline-lg text-headline-lg text-primary">Jajanan Nenek</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface dark:text-inverse-on-surface">© 2026 Jajanan Nenek. Rasa Nostalgia dalam Kualitas Premium.</p>
+</footer>
+</div>
+</div>
+
+<!-- FAB (Suppressed for this page as per instructions for Details/Profile-like content focus) -->
+</body></html>
